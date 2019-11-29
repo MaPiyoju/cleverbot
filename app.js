@@ -7,7 +7,7 @@ var cleverbot = require("cleverbot-free");
 const app = express();//Se inicializa el servidor express}
 
 /*Puerto desarrollo*/
-const port = 3000;//La aplicacion se ejecuta sobre el puerto 3000
+var  port = process.env.PORT || 3000;//La aplicacion se ejecuta sobre el puerto 3000
 /*Puerto produccion*/
 //const port =process.env.PORT || 8080;//La aplicacion se ejecuta sobre el puerto de produccion
 
